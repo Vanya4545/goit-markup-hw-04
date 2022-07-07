@@ -179,14 +179,13 @@ align-items: center;
         width: 270px;
         height: 120px;
         background: #f5f4fa;
-            border-radius: 4px;
-    margin-bottom: 30px;
-    fill: var(--team-background);
+        border-radius: 4px;
+        margin-bottom: 30px;
+        fill: var(--team-background);
+        justify-content: center;
+        align-items: center;
   }
-        .benefits-center {
-           margin:auto
-        }
-
+  
 
 
 
@@ -293,33 +292,37 @@ margin-top: 50px;
 /*.icon-instagram-blue {
     fill: var(--logo-blue)
 }*/
-.icon-instagram {
-   
-   
+.social-icon-team {
+      
     fill: var(--client1);
    }
 
 
-   .social-icon-text {
+   .social-icon-link {
   display: flex;
   justify-content: center;
   align-items: center;
     width: 44px;
     height: 44px;
     border-radius: 50px;
+    background-color: var(--logo-white);
     
    
 }
 
-   .social-icon-text:hover, 
-   .social-icon-text:focus {
-   
+.social-icon-link:hover .social-icon-team {
+    fill:var(--logo-white) ;
+}
+
+   .social-icon-link:hover, 
+   .social-icon-link:focus {
  background-color: var(--logo-blue);
    
    }
 
-.icon-instagram:hover{
+.social-icon-team:hover {
        fill: var(--logo-white);
+   
 }
 
 
@@ -358,7 +361,10 @@ border-radius: 4px;
 .social-icon-clients:hover .icon-client1 {
    fill: var(--border-client-blue);
 }
-
+.social-icon-clients:hover,
+.social-icon-clients:hover {
+    border-color: #2196f3;
+}
  /*.footer-logo-icon-flex {
     
      display: flex;
